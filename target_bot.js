@@ -54,8 +54,6 @@ async function login(page){
     await page.click('#account-sign-in');
     try{
         await page.click("//button[@data-test='accountNav-signIn']"); 
-    }catch(err){
-        console.log("second link doesn't pop up");
     }
     //await page.click("//button[@data-test='accountNav-signIn']");
     await page.fill('#username', 'carlos.arias2903@gmail.com');
